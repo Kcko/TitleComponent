@@ -1,19 +1,27 @@
 {
 	"name": "zenify/title-component",
-	"description": "Title component for Nette Framework",
+	"description": "Title component for Nette",
 	"license": "MIT",
 	"authors": [
-		{
-			"name": "Tomáš Votruba",
-			"homepage": "http://tomasvotruba.cz"
-		}
+		{ "name": "Tomáš Votruba", "homepage": "http://tomasvotruba.cz" }
 	],
 	"require": {
-		"nette/application": "@dev"
+		"php": ">=5.5",
+		"nette/application": "~2.2",
+		"nette/robot-loader": "~2.2",
+		"tracy/tracy": "~2.2"
+	},
+	"require-dev": {
+		"nette/bootstrap": "~2.2"
 	},
 	"autoload": {
-		"psr-0": {
-			"Zenify\\": "src/"
+		"psr-4": {
+			"Zenify\\TitleComponent\\": "src"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"Zenify\\TitleComponent\\Tests\\": "tests"
 		}
 	}
 }
